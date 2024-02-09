@@ -8,6 +8,7 @@ const {auth} = require('../middleware/auth.middleware');
 
 
 
+
  userRouter.post('/register', register);
  userRouter.post('/login', login);
  userRouter.post('/auth/google', googleLogin);

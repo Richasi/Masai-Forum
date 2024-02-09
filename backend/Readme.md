@@ -36,7 +36,7 @@ Allows users to register with username, email, and password.
 201
 
 ```
-http://localhost:4000/api/register/
+http://localhost:3000/api/register/
 
 {"username":"user1",
         "email":"user1@gmail.com",
@@ -58,7 +58,7 @@ http://localhost:4000/api/register/
 Allows users to log in with email and password.
 200
 ```
-http://localhost:4000/api/login
+http://localhost:3000/api/login
 
 {
         "email":"user4@gmail.com",
@@ -88,7 +88,7 @@ Allows users to create a new post with title, content, and media. (Requires Auth
 201
 ```
 
-http://localhost:4000/api/posts
+http://localhost:3000/api/posts
 Authorization
 Bearer eyJ1c2VySUQiOiI2NTljZWEwYzQyOTM2NzQzMDVmYmFmZjgiLCJ1c2VybmFtZSI6InVzZXIyMiIsImlhdCI6MTcwNDc4MjUxNH0.ViiFcHjy1OVkJwlaH7F75StYpS91OYaARkF3KqSBM00
 
@@ -168,7 +168,7 @@ GET:
 Retrieves all the posts published by all the users.
 200
 ```
-http://localhost:4000/api/posts
+http://localhost:3000/api/posts
 Authorization
 Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NWM1MTM5MzQ3Y2Y4M2M0NzA3NGQzY2QiLCJpYXQiOjE3MDc0MTQ1MTN9._VtfihTawRD9ObpBiYr3y2LPuEqXqmZqinLLyk24sG0
 
@@ -296,7 +296,7 @@ This endpoint should allow the user to edit the contents of a post. (Requires Au
 204
 
 ```
-http://localhost:4000/api/posts/:post_id
+http://localhost:3000/api/posts/:post_id
 {
  "title": " doownload"
 
@@ -314,7 +314,7 @@ This endpoint should allow the user to delete a post. (Requires Authorization)
 202
 
 ```
-http://localhost:4000/api/posts/:post_id
+http://localhost:3000/api/posts/:post_id
 
 
 {

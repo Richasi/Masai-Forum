@@ -11,6 +11,7 @@ const {userRouter} = require('./routes/user.routes');
 // const errorHandlingMiddleware = require('./middleware/errorHandlingMiddleware');
 
 const app = express();
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static('public'));
@@ -33,15 +34,12 @@ async function startServer() {
       console.log("Database connected");
     } catch {
       console.log("Database connect Failed");
-
     }
-    
   
     app.listen(PORT,() => {
       console.log(`Server is running at http://localhost:${PORT}`);
       console.log("Server Started");
     });
   }
-
   
   startServer();
